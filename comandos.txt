@@ -1,3 +1,5 @@
+npx create-react-app (nome do arquivo)
+
   npm start
     Starts the development server.
 
