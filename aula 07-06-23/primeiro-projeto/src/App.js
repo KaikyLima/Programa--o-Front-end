@@ -3,10 +3,10 @@ import './App.css';
 import Card from './components/Card';
 import List from './components/List';
 import FormattedText from './components/FormattedText';
+import UserInfo from './components/UserInfo';
 
 const list1 = ["Primeiro Item","Segundo Item","Terceiro Item","Quarto Item"]
 const list2 = ["banana", "tomate"]
-
 function App() {
 const [contador, setContador] = useState(0)
 
@@ -24,7 +24,8 @@ const handleClick = () => {
 
         <List items={list1}/>
         <List items={list2}/>
-        <FormattedText label="10" value="testes"/>
+        <FormattedText label="10" value="testes"/> 
+        <UserInfo items={list3}/>
 
 
       </header>
