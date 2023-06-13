@@ -1,9 +1,16 @@
 npx create-react-app (nome do arquivo)
+npm install (instalar as dependencias)
+
+
 
   npm start
-    Starts the development server.
+    Starts the development server. (iniciar o servidor)
 
-  npm run build
+  
+
+Comandos extras de testes {
+
+npm run build
     Bundles the app into static files for production.
 
   npm test
@@ -15,5 +22,4 @@ npx create-react-app (nome do arquivo)
 
 We suggest that you begin by typing:
 
-  cd primeiro-projeto
-  npm start
+}
