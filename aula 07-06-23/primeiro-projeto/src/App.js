@@ -3,6 +3,7 @@ import './App.css';
 import Card from './components/Card';
 import List from './components/List';
 import FormattedText from './components/FormattedText';
+import Box from './components/Box';
 
 const list1 = ["Primeiro Item","Segundo Item","Terceiro Item","Quarto Item"]
 const list2 = ["banana", "tomate"]
@@ -28,6 +29,9 @@ const handleClick = ()   => {
         <List items={list1}/>
         <List items={list2}/>
         <FormattedText label="10" value="testes"/> 
+        <Box colorTex={"#f0f"}>
+          <p>TESTE</p>
+        </Box>
         
 
 
