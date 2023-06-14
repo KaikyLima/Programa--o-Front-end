@@ -6,7 +6,7 @@ const RandomNumber = () => {
     const [RandomNumber, setRandomNumber] = useState()
 
     const generateRandomNumber = () =>{
-        
+        const generateRandomNumber = Math.floor(Math.random() * 100);
     }
 
     return (
