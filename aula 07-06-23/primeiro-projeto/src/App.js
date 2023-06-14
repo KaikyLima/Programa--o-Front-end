@@ -4,6 +4,7 @@ import Card from './components/Card';
 import List from './components/List';
 import FormattedText from './components/FormattedText';
 import Box from './components/Box';
+import RandomNumber from './components/RandomNumber';
 
 const list1 = ["Primeiro Item","Segundo Item","Terceiro Item","Quarto Item"]
 const list2 = ["banana", "tomate"]
@@ -17,7 +18,7 @@ const handleClick = ()   => {
   return (
     <div className="App">
       <header className="App-header">
-        <Card Card text="Texto passado do App.js para o Card.js" bgColor="#f2f"
+          {/* <Card Card text="Texto passado do App.js para o Card.js" bgColor="#f2f"
         contador={contador}/>
         <Card Card text="Segundo card" bgColor="#ada" contador={contador}/>
         <button onClick={handleClick}></button>
@@ -31,8 +32,8 @@ const handleClick = ()   => {
         <FormattedText label="10" value="testes"/> 
         <Box colorTex={"#f0f"}>
           <p>TESTE</p>
-        </Box>
-        
+        </Box> */}
+        <RandomNumber/>
 
 
       </header>

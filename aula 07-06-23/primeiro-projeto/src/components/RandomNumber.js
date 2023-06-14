@@ -5,9 +5,14 @@ const RandomNumber = () => {
 
     const [RandomNumber, setRandomNumber] = useState()
 
+    const generateRandomNumber = () =>{
+        
+    }
+
     return (
-        <Box>
-            <h3></h3>
+        <Box colorTex="#fff">
+            <button onClick={generateRandomNumber}>Sortear número aleatório</button>
+            <h3>O número aleatório é: {RandomNumber}</h3>
         </Box>
     );
 }
