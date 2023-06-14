@@ -1,6 +1,21 @@
-const FormattedText = ({label, value}) => {
+const LabelValue = ({label,value}) => {
+    return(
+        <h3>{label}:{value}</h3>
+    )
+}
+
+ const FormattedText = ({label, value}) => {
+
+//     const renderLabelValue = () => {
+//         return(
+//             <h3>{label}:{value}</h3>
+//         )
+//     }
+
     return (
-        <h1>{label}:{value}</h1>
+        <div>
+            <LabelValue label={label} value={value}/>
+        </div>
     );
 }
 
