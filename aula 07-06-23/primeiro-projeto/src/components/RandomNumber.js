@@ -7,6 +7,7 @@ const RandomNumber = () => {
 
     const generateRandomNumber = () =>{
         const generateRandomNumber = Math.floor(Math.random() * 100);
+        setRandomNumber(generateRandomNumber)
     }
 
     return (
