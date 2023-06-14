@@ -5,6 +5,7 @@ import List from './components/List';
 import FormattedText from './components/FormattedText';
 import Box from './components/Box';
 import RandomNumber from './components/RandomNumber';
+import NameRandom from './components/NameRandom';
 
 const list1 = ["Primeiro Item","Segundo Item","Terceiro Item","Quarto Item"]
 const list2 = ["banana", "tomate"]
@@ -34,6 +35,7 @@ const handleClick = ()   => {
           <p>TESTE</p>
         </Box> */}
         <RandomNumber/>
+        <NameRandom/>
 
 
       </header>
