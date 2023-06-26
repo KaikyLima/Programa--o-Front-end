@@ -49,7 +49,7 @@ const Pokedex = () => {
         return (
             <div className="container">
                 {pokeData.slice(0,offset).map(poke =>(
-                    <Link to={`/country/${poke.name.common}`} >
+                    <Link to={`/country/${poke.name.common}`} style={{textDecoration:"none", color:"#ffffff "}}>
                     <div>
                         <h4>{poke.name.common}</h4>
                         <img src= {poke.flags.png} alt="" />
@@ -66,7 +66,7 @@ const Pokedex = () => {
         <div>
             <details>
                 <summary>Listagem dos Países</summary>
-                <p>Clique sobre o nome do país para obter mais detalhes sobre ele</p>
+                <p>Clique sobre o nome ou bandeira do país para obter mais detalhes sobre ele</p>
 
             </details>
             {renderPokeData()}
