@@ -1,8 +1,18 @@
-.container {
+.containerr {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
     border: 1px solid #333333; /* Cinza escuro */
   }
+
+  body {
+    background-color: #121212; /* Preto escuro */
+    color: #ffffff; /* Branco */
+    font-family: Arial, sans-serif;
+  }
   
+  .bandeira{
+    height: auto;
+    width: auto;
+  }
   
