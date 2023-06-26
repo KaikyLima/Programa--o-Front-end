@@ -1,5 +1,6 @@
 npx create-react-app (nome do arquivo)
 npm install (instalar as dependencias)
+npm i react-router-dom (instalar rotas)
 
 
 

@@ -1,23 +1,24 @@
 import axios from "axios";
 import { useCallback, useEffect, useState } from "react";
-
+import './Pokedex.css'
+import { Link } from "react-router-dom";
 
 
 const Pagination = ({request, offset}) => {
 
     const nextPage = () => {
-        request(offset + 20)
+        request(offset + 12)
     }
 
     const previousPage = () => {
-        if (offset <= 20) return
-        request(offset - 20)
+        if (offset <= 12) return
+        request(offset - 12)
     }
 
     return (
         <div>
-            <button onClick={nextPage}> + </button>
-            <button onClick={previousPage}> - </button>
+            <button onClick={previousPage} className="buttonColor"> Carregar menos </button>
+            <button onClick={nextPage} className="buttonColor"> Carregar mais </button>
         </div>
     )
 
@@ -28,7 +29,7 @@ const Pagination = ({request, offset}) => {
 const Pokedex = () => {
 
     const [pokeData, setPokeData] = useState ([])
-    const [offset, setOffset] = useState(20);
+    const [offset, setOffset] = useState(12);
     const fetchPokeData = useCallback (async (paramOffset) =>{
         console.log('teste')
         try{
@@ -46,12 +47,15 @@ const Pokedex = () => {
 
     const renderPokeData = () => {
         return (
-            <div>
+            <div className="container">
                 {pokeData.slice(0,offset).map(poke =>(
+                    <Link to={`/country/${poke.name.common}`} >
                     <div>
                         <h4>{poke.name.common}</h4>
                         <img src= {poke.flags.png} alt="" />
                     </div>
+                    </Link>
+                    
             ))}
             </div>
         )
@@ -60,7 +64,11 @@ const Pokedex = () => {
 
     return (
         <div>
-        <h1>Listagem dos Países</h1>
+            <details>
+                <summary>Listagem dos Países</summary>
+                <p>Clique sobre o nome do país para obter mais detalhes sobre ele</p>
+
+            </details>
             {renderPokeData()}
             <Pagination offset={offset} request={(e) => setOffset(e)}/>
         </div>
