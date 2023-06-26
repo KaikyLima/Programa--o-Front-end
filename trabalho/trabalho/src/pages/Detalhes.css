@@ -2,11 +2,11 @@
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
-    border: 1px solid #333333; /* Cinza escuro */
+    border: 1px solid #30363D; /* Cinza escuro */
   }
 
   body {
-    background-color: #121212; /* Preto escuro */
+    background-color: #282C34; /* Preto escuro */
     color: #ffffff; /* Branco */
     font-family: Arial, sans-serif;
   }
