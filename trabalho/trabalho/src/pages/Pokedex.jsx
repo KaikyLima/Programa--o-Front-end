@@ -14,7 +14,7 @@ const Pagination = ({request, offset}) => {
         if (offset <= 12) return
         request(offset - 12)
     }
-
+        
     return (
         <div>
             <button onClick={previousPage} className="buttonColor"> Carregar menos </button>
