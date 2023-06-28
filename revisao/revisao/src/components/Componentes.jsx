@@ -4,6 +4,9 @@ const Componentes = ({props1}) => {
     console.log("testando", props1)
 
     const [nomeEstado, setNomeEstado] = useState()
+    const onclickH3 = () => {
+        setNomeEstado ('Teste')
+    }
 
     return (
         <div>
