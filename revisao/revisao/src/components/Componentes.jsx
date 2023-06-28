@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import axios from "axios";
 
 const Componentes = ({props1}) => {
     console.log("testando", props1)
@@ -6,6 +7,17 @@ const Componentes = ({props1}) => {
     const [nomeEstado, setNomeEstado] = useState()
     const onclickH3 = () => {
         setNomeEstado ('Teste')
+    }
+
+    const request = async () => {
+        try{
+            const response = axios.get('http://sdasd.asdasd.cdasd/asd')
+            response.data
+        }catch(error){
+            console.error(error);
+        }finally{
+
+        }
     }
 
     useEffect(() =>{
