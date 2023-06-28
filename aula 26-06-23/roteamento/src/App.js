@@ -3,6 +3,7 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import Login from './pages/Login';
 import Home from './pages/Home';
 import Details from './pages/Details';
+import NumberList from './pages/NumberList';
 
 function App() {
 
@@ -16,9 +17,14 @@ function App() {
     element: <Home/>
    },
    {
-    path: '/:selectedNumber',
+    path: '/numbers',
+    element: <NumberList/>
+   },
+   {
+    path: '/numbers/:selectedNumber',
     element:<Details/>
    }
+   
 ])
 
   return (

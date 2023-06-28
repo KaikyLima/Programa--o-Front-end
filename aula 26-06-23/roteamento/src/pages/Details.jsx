@@ -1,6 +1,11 @@
+import { useParams } from "react-router-dom";
+
 const Details = () => {
+
+    const {selectedNumber} = useParams()
+
     return (
-        <div>Número clicado: </div>
+        <div>Número clicado: {selectedNumber}</div>
     );
 }
 
