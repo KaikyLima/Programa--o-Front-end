@@ -16,6 +16,12 @@ const Componentes = ({props1}) => {
         /*Irá executar quando a props1 atualizar*/
     },[props1])
 
+    useEffect(() => {
+        return () =>{
+            /*Essa função só executa quando o componente desmontar*/
+        }
+    },[])
+
     return (
         <div>
             <h3 onClick={onclickH3}>
