@@ -11,8 +11,8 @@ const Componentes = ({props1}) => {
 
     const request = async () => {
         try{
-            const response = axios.get('http://sdasd.asdasd.cdasd/asd')
-            response.data
+            const {data} = await axios.get('http://sdasd.asdasd.cdasd/asd')
+
         }catch(error){
             console.error(error);
         }finally{
