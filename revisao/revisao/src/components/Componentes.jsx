@@ -26,7 +26,7 @@ const Componentes = ({props1}) => {
 
     useEffect(() =>{
         /*Irá executar quando a props1 atualizar*/
-    },[props1])
+    },[props1, nomeEstado])
 
     useEffect(() => {
         return () =>{
