@@ -1,0 +1,22 @@
+
+.nomeMusica{
+    color: rgb(0, 255, 0);
+}
+
+.NomeBandas{
+    color: rgb(255, 0, 149);
+}
+
+.musicP {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+  
+ 
+.item {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+  
+  
